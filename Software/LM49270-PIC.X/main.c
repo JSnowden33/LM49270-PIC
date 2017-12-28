@@ -268,7 +268,7 @@ void interrupt ISR()
         TMR0IF = 0;
         TMR0 = 0x00;
         
-        // Increase volume if button was held for over 50ms
+        // Decrease volume if button was held for over 50ms
         if (count >= 200)
         {
             Volume_Down();
@@ -285,7 +285,7 @@ void interrupt ISR()
             TMR0IF = 0;
             TMR0CS = 0;
             
-            // Increase volume every 250ms as long as button is pressed
+            // Decrease volume every 250ms as long as button is pressed
             while (!BUTTON_DN)
             {
                 if (TMR0IF)
