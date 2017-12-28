@@ -1,0 +1,10 @@
+Components can be bought from Digikey or Mouser
+
+1 x 10 uF 1206 capacitor (TMCMA1C106MTRF)
+11 x 1 uF 0402 capacitor (GRM155R61C105MA12D)
+8 x 4.7K 0402 resistor (RC0402FR-074K7L)
+2 x 10K 0402 resistor (RC0402FR-0710KL)
+2 x 22 ohm 0402 resistor (RC0402JR-0722RL)
+1 x Headphone Jack (SJ-3524-SMT-TR)
+1 x PIC16F1503 QFN-16 (PIC16F1503-I/MG)
+1 x LM49270 QFN-28 (LM49270SQ/NOPB)
