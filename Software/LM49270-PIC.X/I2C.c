@@ -7,16 +7,17 @@
 #include "I2C.h"
 #include "Config.h"
 
-void I2C_Master_Init(const unsigned long clk) {
-  SSP1CON1 = 0b00101000;
-  SSP1CON2 = 0x00;
-  SSP1ADD = (_XTAL_FREQ / (4*clk)) - 1;
-  SSP1STAT = 0b10000000;
+void I2C_Master_Init(const unsigned long clk)
+{
+    SSP1CON1 = 0b00101000;
+    SSP1CON2 = 0x00;
+    SSP1ADD = (_XTAL_FREQ / (4*clk)) - 1;
+    SSP1STAT = 0b10000000;
 }
 
 void I2C_Master_Wait()
 {
-  while ((SSP1STAT & 0x04) || (SSP1CON2 & 0x1F));
+    while ((SSP1STAT & 0x04) || (SSP1CON2 & 0x1F));
 }
 
 void I2C_Master_Start()
